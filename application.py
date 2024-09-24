@@ -1,14 +1,14 @@
-import streamlit as st
+# import streamlit as st
 
-st.write('Hello, world!!')
+# st.write('Hello, world!!')
 
-# from flask import Flask
+from flask import Flask
 
-# app = Flask(__name__)
+application = Flask(__name__)
 
-# @app.route("/")
-# def hello_world():
-#     return "<p>Hello, World!</p>"
+@application.route("/")
+def hello_world():
+    return "<p>Hello, World!</p>"
 
-# if __name__ == '__main__':
-#     app.run()
+if __name__ == '__main__':
+    application.run()
